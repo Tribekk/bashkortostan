@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+    color: green;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+green {
+    color: green;
+}
+
+th {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.29);
+}
+
+td {
+    border: 1px solid rgba(0, 0, 0, 0.29);
+}
+
+.download {
+    float: right;
+    padding: 0 0 0 75%;
+}
