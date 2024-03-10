@@ -23,6 +23,7 @@
                 <p class="text-center m-4">Муниципальный район Зианчуринский район Республики Башкортостан
                     Муниципальный район Зианчуринский район Республики Башкортостан</p>
             </a>
+            <a href="http://127.0.0.1:8000/admin">Админка</a>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
