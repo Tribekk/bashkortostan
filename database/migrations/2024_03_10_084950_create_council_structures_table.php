@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('photo');
             $table->string('FIO');
+            $table->string('phone');
+            $table->string('mail');
             $table->string('subdivision');
             $table->string('job_title');
             $table->string('information');

@@ -19,16 +19,16 @@
             @foreach ($elements as $element)
                 <tr>
                     <td class="px-5">
-                        <div class="d-flex"><img src="{{$element->photo}}" alt="">
+                        <div class="d-flex"><img src="../storage/{{$element->photo}}" alt="">
                             <div>
-                                <h5 class="m-3">{{$element->name}}</h5>
+                                <h5 class="m-3">{{$element->FIO}}</h5>
                                 <p class="m-3 mt-5">Рейтинг: {{$element->rating}}</p>
                             </div>
                         </div>
                     </td>
                     <td class="px-5">{{$element->partia}}</td>
                     <td class="px-5">
-                        <green>{{$element->info}}</green>
+                        <green>{{$element->information}}</green>
                     </td>
                 </tr>
             @endforeach

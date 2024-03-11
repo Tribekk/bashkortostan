@@ -57,3 +57,4 @@ Route::prefix('/council')->group(function () {
 
     Route::get('/deputies', [DeputiesController::class, 'index'])->name('deputies');
 });
+

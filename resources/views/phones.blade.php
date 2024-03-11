@@ -24,7 +24,7 @@
                 @foreach ($elements as $element)
                     <tr>
                         <td class="px-5">{{$element->name}}</td>
-                        <td class="px-5"><a href="tel:{{$element->phone}}">{{$element->phone}}</a></td>
+                        <td class="px-5"><a href="tel:{{$element->number}}">{{$element->number}}</a></td>
                     </tr>
                 @endforeach
             </table>

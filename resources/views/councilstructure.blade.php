@@ -29,14 +29,16 @@
             @foreach ($elements as $element)
                 <tr>
                     <td class="px-5">
-                        <div class="d-flex"><img src="{{$element->photo}}" alt="">
-                            <h5 class="m-3">{{$element->name}}</h5></div>
+                        <div class="d-flex"><img src="../storage/{{$element->photo}}" alt="">
+                            <h5 class="m-3 mt-5">{{$element->FIO}}</h5></div>
                     </td>
                     <td class="px-5">
                         <green>{{$element->subdivision}}</green>
                     </td>
-                    <td class="px-5">{{$element->job}}</td>
+                    <td class="px-5">{{$element->job_title}}</td>
                     <td class="px-5">
+                        @if($element->information!='Не указано')
+                            @isset($element->phone)
                         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -50,6 +52,8 @@
                         </svg>
                         <green>{{$element->phone}}</green>
                         <br>
+                            @endisset
+                                @isset($element->mail)
                         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -62,8 +66,12 @@
                             </g>
                         </svg>
                         <green>{{$element->mail}}</green>
-                        <br>
-                        <div class="mb-3"></div>
+                                @endisset
+                            <br>
+                            <div class="mb-3"></div>
+                        @else
+                            <green>{{$element->information}}</green>
+                        @endif
                     </td>
                 </tr>
             @endforeach

@@ -30,13 +30,13 @@
             @foreach ($elements as $element)
                 <tr>
                     <td class="px-5">
-                        <div class="d-flex"><img src="{{$element->photo}}" alt="">
+                        <div class="d-flex"><img src="../storage/{{$element->photo}}" alt="">
                             <h5 class="m-3">{{$element->name}}</h5></div>
                     </td>
                     <td class="px-5">
                         <green>{{$element->subdivision}}</green>
                     </td>
-                    <td class="px-5">{{$element->job}}</td>
+                    <td class="px-5">{{$element->job_title}}</td>
                     <td class="px-5">
                         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@
                                     stroke-linejoin="round"></path>
                             </g>
                         </svg>
-                        <green>{{$element->phone}}</green>
+                        <green>{{$element->number}}</green>
                         <br>
                         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@
                                     stroke-linejoin="round"></path>
                             </g>
                         </svg>
-                        <green>{{$element->mail}}</green>
+                        <green>{{$element->email}}</green>
                         <br>
                         <h6 class="mt-2">График приема:</h6>
                         {{$element->reception}}

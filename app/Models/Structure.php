@@ -15,4 +15,8 @@ class Structure extends Model
     {
         return $filter->apply($builder);
     }
+
+    protected $fillable=[
+        'photo', 'FIO', 'subdivision', 'job_title', 'email', 'number', 'reception'
+    ];
 }

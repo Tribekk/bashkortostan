@@ -15,4 +15,7 @@ class CouncilStructure extends Model
     {
         return $filter->apply($builder);
     }
+    protected $fillable=[
+        'photo', 'FIO', 'subdivision', 'job_title', 'information', 'phone', 'mail'
+    ];
 }
