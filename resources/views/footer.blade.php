@@ -19,9 +19,8 @@
                 </div>
             </div>
             <hr>
-            <a href="" class="d-flex"> <img src="../img/c6a84e9e937eca30ab61ba69b38f9c72_55_73.png" alt="">
-                <p class="text-center m-4">Муниципальный район Зианчуринский район Республики Башкортостан
-                    Муниципальный район Зианчуринский район Республики Башкортостан</p>
+            <a href="" class="d-flex"> <img src="{{asset('img/c6a84e9e937eca30ab61ba69b38f9c72_55_73.png')}}" alt="">
+                <p class="text-center m-4">Муниципальный район Зианчуринский район Республики Башкортостан</p>
             </a>
             <a href="http://127.0.0.1:8000/admin">Админка</a>
         </footer>

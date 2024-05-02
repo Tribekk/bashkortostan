@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\CouncilStructureController;
 use App\Http\Controllers\DeputiesController;
+use App\Http\Controllers\EventsController;
+use App\Http\Controllers\FeedbackController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PhonesController;
 use App\Http\Controllers\SettlementsController;
 use App\Http\Controllers\StructureController;
@@ -56,5 +59,15 @@ Route::prefix('/council')->group(function () {
     Route::get('/councilstructure', [CouncilStructureController::class, 'index'])->name('councilstructure');
 
     Route::get('/deputies', [DeputiesController::class, 'index'])->name('deputies');
+});
+
+Route::prefix('/presscenter')->group(function (){
+    Route::get('/news', [NewsController::class, 'index'])->name('news');
+    Route::get('/news/{id}', [NewsController::class, 'show'])->name('news.id');
+    Route::get('/events', [EventsController::class, 'index'])->name('events');
+    Route::get('/events/{id}', [EventsController::class, 'show'])->name('events.id');
+    Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback');
+    Route::post('/feedback', [FeedbackController::class, 'send']);
+    Route::get('/answer', [FeedbackController::class, 'answers'])->name('answers');
 });
 

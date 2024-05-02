@@ -14,11 +14,11 @@ class StructureFilter extends QueryFilter
 
     public function search_job($search_string = '')
     {
-        return $this->builder->where('job', 'LIKE', '%' . $search_string . '%');
+        return $this->builder->where('job_title', 'LIKE', '%' . $search_string . '%');
     }
 
     public function search_fio($search_string = '')
     {
-        return $this->builder->where('name', 'LIKE', '%' . $search_string . '%');
+        return $this->builder->where('FIO', 'LIKE', '%' . $search_string . '%');
     }
 }

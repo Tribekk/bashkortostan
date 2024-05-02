@@ -25,3 +25,9 @@ td {
     float: right;
     padding: 0 0 0 75%;
 }
+.background{
+    background-image: url("../img/1920x1080_1558059_[www.ArtFile.ru].jpg");
+}
+.ico{
+    width: 10vw;
+}

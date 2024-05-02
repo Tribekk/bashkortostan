@@ -9,7 +9,7 @@
             </ol>
         </nav>
     </div>
-    <div class="container mt-3">
+    <div class="container mt-3 bg-white py-5 rounded-5">
         <h1>Контакты и реквизиты</h1>
         <div class="container m-5 mx-auto p-2">
             <table class="mx-auto p-2">

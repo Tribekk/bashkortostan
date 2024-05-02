@@ -9,7 +9,7 @@
             </ol>
         </nav>
     </div>
-    <div class="container mt-3">
+    <div class="container mt-3 bg-white py-5 rounded-5">
         <h1>Структура</h1>
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" role="search" method="GET">
             <input type="search" class="form-control m-3"
@@ -31,7 +31,7 @@
                 <tr>
                     <td class="px-5">
                         <div class="d-flex"><img src="../storage/{{$element->photo}}" alt="">
-                            <h5 class="m-3">{{$element->name}}</h5></div>
+                            <h5 class="m-3">{{$element->FIO}}</h5></div>
                     </td>
                     <td class="px-5">
                         <green>{{$element->subdivision}}</green>

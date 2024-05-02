@@ -9,7 +9,7 @@
             </ol>
         </nav>
     </div>
-    <div class="container mt-3">
+    <div class="container mt-3 bg-white py-5 rounded-5">
         <h1>Депутаты</h1>
         <table class="mx-auto p-2 mt-5">
             <th class="mx-5 px-5" style="background-color: rgba(155,169,192,0.43)">Депутат:</th>

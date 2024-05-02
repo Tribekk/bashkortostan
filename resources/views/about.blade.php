@@ -8,7 +8,7 @@
             </ol>
         </nav>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5 bg-white py-5 rounded-5">
         <h1>Об Администрации</h1>
         <div class="download m-3">
             <a href="files/polozhenie_ob_administratsii.doc" download>

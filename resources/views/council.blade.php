@@ -9,7 +9,7 @@
             </ol>
         </nav>
     </div>
-    <div class="container mt-3">
+    <div class="container mt-3 bg-white py-5 rounded-5">
         <h1>О совете</h1>
 
     </div>

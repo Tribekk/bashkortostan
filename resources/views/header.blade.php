@@ -1,8 +1,8 @@
 <div class="container mt-5">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{route('home')}}"><img
-                    src="../img/c6a84e9e937eca30ab61ba69b38f9c72_55_73.png" alt=""></a>
+                    src="{{asset('img/c6a84e9e937eca30ab61ba69b38f9c72_55_73.png')}}" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false"
@@ -45,71 +45,21 @@
                             <li><a class="dropdown-item" href="{{route('council')}}">О совете</a></li>
                             <li><a class="dropdown-item" href="{{route('councilstructure')}}">Структура</a></li>
                             <li><a class="dropdown-item" href="{{route('deputies')}}">Депутаты</a></li>
-                            <!--  <li><a class="dropdown-item" href="#">Документы совета</a></li> -->
                             <li><a class="dropdown-item" href="#">Контакты и реквезиты</a></li>
                         </ul>
                     </li>
-                    <!--<li class="nav-item dropdown p-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Деятельность
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Услуги, предоставляемые в электронном ввиде</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Архив</a></li>
-                            <li><a class="dropdown-item" href="#">Жилищн-комунальное хозяйство</a></li>
-                            <li><a class="dropdown-item" href="#">Защита прав потребителя</a></li>
-                            <li><a class="dropdown-item" href="#">Культура</a></li>
-                            <li><a class="dropdown-item" href="#">Муниципальные услуги</a></li>
-                            <li><a class="dropdown-item" href="#">Образование</a></li>
-                            <li><a class="dropdown-item" href="#">Предпринимателю и инвестору</a></li>
-                            <li><a class="dropdown-item" href="#">Противодействие корупции</a></li>
-                            <li><a class="dropdown-item" href="#">Сельское хозяйство</a></li>
-                            <li><a class="dropdown-item" href="#">Все виды деятельности</a></li>
-                        </ul>
-                    </li>-->
-                    <!--<li class="nav-item dropdown p-2">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Гражданам
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Написать обращение</a></li>
-                            <li><a class="dropdown-item" href="#">Вопросы и ответы</a></li>
-                        </ul>
-                    </li>-->
-                    <!-- <li class="nav-item dropdown p-2">
-                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                             Документы
-                         </a>
-                         <ul class="dropdown-menu">
-                             <li><a class="dropdown-item" href="#">Действующие документы</a></li>
-                             <li><a class="dropdown-item" href="#">Проекты документов</a></li>
-                             <li><a class="dropdown-item" href="#">Планы</a></li>
-                             <li><a class="dropdown-item" href="#">Отчёты</a></li>
-                             <li><a class="dropdown-item" href="#">Результаты проверок</a></li>
-                             <li><a class="dropdown-item" href="#">Утратевшие силу</a></li>
-                             <li><a class="dropdown-item" href="#">Прочие документы</a></li>
-                             <li><a class="dropdown-item" href="#">Все документы</a></li>
-                         </ul>
-                     </li>-->
-                    <!--  <li class="nav-item dropdown p-2">
+                    <li class="nav-item dropdown p-2">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                              aria-expanded="false">
                               Пресс-центр
                           </a>
                           <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Новости</a></li>
-                              <li><a class="dropdown-item" href="#">События</a></li>
-                              <li><a class="dropdown-item" href="#">Доклад ивыступления</a></li>
-                              <li><a class="dropdown-item" href="#">Прямая речь</a></li>
-                              <li><a class="dropdown-item" href="#">Фотогалерея</a></li>
-                              <li><a class="dropdown-item" href="#">Видеогалерея</a></li>
-                              <li><a class="dropdown-item" href="#">Опросы</a></li>
+                              <li><a class="dropdown-item" href="{{route('news')}}">Новости</a></li>
+                              <li><a class="dropdown-item" href="{{route('events')}}">События</a></li>
+                              <li><a class="dropdown-item" href="{{route('feedback')}}">Обратная связь</a></li>
+                              <li><a class="dropdown-item" href="{{route('answers')}}">Ответы</a></li>
                           </ul>
-                      </li>-->
+                      </li>
                 </ul>
             </div>
         </div>
